@@ -1,0 +1,25 @@
+{
+  "name": "ui-group",
+  "version": "1.0.0",
+  "description": "rn中常用ui组件",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangchongwei/ui-group.git"
+  },
+  "keywords": [
+    "ui"
+  ],
+  "author": "wcw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangchongwei/ui-group/issues"
+  },
+  "homepage": "https://github.com/wangchongwei/ui-group#readme"
+}
