@@ -12,22 +12,22 @@ type Column = {
 };
 
 type Props = {
-    data: Array<any>,
-    numColumns: number,
-    renderItem: ({ item: any, index: number, column: number }) => ?React.Element< any, >,
-    getHeightForItem: ({ item: any, index: number }) => number,
-    ListHeaderComponent?: ?React.ComponentType<any>,
-    ListEmptyComponent?: ?React.ComponentType<any>,
-    keyExtractor?: (item: any, index: number) => string,
-    onEndReached?: ?(info: { distanceFromEnd: number }) => void,
-    contentContainerStyle?: any,
-    onScroll?: (event: Object) => void,
-    onScrollBeginDrag?: (event: Object) => void,
-    onScrollEndDrag?: (event: Object) => void,
+    data: Array<any>, // 数据源
+    numColumns: number, // 列数
+    renderItem: ({ item: any, index: number, column: number }) => ?React.Element< any, >, // 子条目的渲染
+    getHeightForItem: ({ item: any, index: number }) => number, // 获取每个子条目高度
+    ListHeaderComponent?: ?React.ComponentType<any>, // list头部组件
+    ListEmptyComponent?: ?React.ComponentType<any>, // list无数据时显示的组件
+    keyExtractor?: (item: any, index: number) => string, // 获取条目key
+    onEndReached?: ?(info: { distanceFromEnd: number }) => void, // 当列表触底执行的方法
+    contentContainerStyle?: any, //
+    onScroll?: (event: Object) => void, // 当列表在滚动时 触发的函数
+    onScrollBeginDrag?: (event: Object) => void, // 当滚动开始
+    onScrollEndDrag?: (event: Object) => void, // 
     onMomentumScrollEnd?: (event: Object) => void,
     onEndReachedThreshold?: ?number,
     scrollEventThrottle: number,
-    renderScrollComponent: (props: Object) => React.Element<any>,
+    renderScrollComponent: (props: Object) => React.Element<any>, 
 }
 
 type State = {
@@ -187,7 +187,6 @@ export default class MasonryList extends React.Component<Props, State>{
         if (ListEmptyComponent) {
             emptyElement = <ListEmptyComponent />;
         }
-        console.log('columns', this.state.columns);
         const content = (
             <View style={styles.contentContainer}>
                 {this.state.columns.map(col =>
