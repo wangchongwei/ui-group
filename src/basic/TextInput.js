@@ -7,7 +7,7 @@ import { TextInput, Platform } from 'react-native';
 type Props = {}
 
 
-export default class TextInput extends React.Component<Props>{
+export default class Input extends React.Component<Props>{
 
 
     shouldComponentUpdate(nextProps){
