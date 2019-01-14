@@ -1,6 +1,5 @@
 /**
  * 时间选择组件
- * 该组件暂时和业务紧密结合，不同场景暂时不可通用
  */
 import React from 'react';
 import { View, StyleSheet, Modal, Dimensions, TouchableOpacity } from 'react-native';
